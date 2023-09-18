@@ -34,3 +34,8 @@ code {
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
+
+.box .pro-menu-item:hover {
+  color: #3380ff !important;
+  background: #d5e6fb !important;
+}

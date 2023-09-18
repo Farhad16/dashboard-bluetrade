@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../Layout";
 
 function Dashboard() {
-  return <Layout>hh</Layout>;
+  return <Layout>hdddddh</Layout>;
 }
 
 export default Dashboard;
