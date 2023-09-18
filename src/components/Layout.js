@@ -1,28 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Topbar from "./global/Topbar";
 import Sidebar from "./global/Sidebar";
+import useThemeMode from "./hooks/useThemeMode";
 
-function Layout() {
-  const [theme, setTheme] = useState(localStorage.theme);
-  const colorTheme = theme === "dark" ? "light" : "dark";
-
-  const toggleDarkMode = () => {
-    setTheme(colorTheme);
-  };
-
-  useEffect(() => {
-    const root = window.document.documentElement;
-    root.classList.remove(colorTheme);
-    root.classList.add(theme);
-
-    localStorage.setItem("theme", theme);
-  }, [colorTheme, theme]);
+function Layout({ children }) {
+  const { toggleDarkMode, theme } = useThemeMode();
 
   return (
     <div className="flex relative">
       <Sidebar theme={theme} />
-      <div className="flex flex-col bg-[#F2F8FF] w-full">
+      <div className="flex flex-col dark:bg-[#12131A] bg-[#F2F8FF] w-full">
         <Topbar theme={theme} toggleDarkMode={toggleDarkMode} />
+        {children}
       </div>
     </div>
   );

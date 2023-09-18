@@ -39,7 +39,7 @@ function Sidebar({ theme }) {
         },
         "& .pro-sidebar-inner": {
           background: `${
-            theme === "dark" ? "black !important" : "#fff !important"
+            theme === "dark" ? "#1C1C25 !important" : "#fff !important"
           }`,
           minHeight: "100vh",
         },

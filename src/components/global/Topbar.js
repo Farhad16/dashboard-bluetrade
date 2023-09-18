@@ -16,7 +16,7 @@ function Topbar({ theme, toggleDarkMode }) {
   };
 
   return (
-    <div className="flex flex-row justify-between items-center px-6 py-4 bg-white dark:bg-[#1C1C25] gap-8">
+    <div className="flex flex-row justify-between items-center px-4 py-4 bg-white dark:bg-[#1C1C25] gap-4">
       <div className="w-1/2">
         <TextField
           variant="outlined"
