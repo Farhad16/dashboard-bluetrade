@@ -20,7 +20,8 @@ code {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -33,9 +34,14 @@ code {
 
 ::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 20px;
 }
 
 .box .pro-menu-item:hover {
   color: #3380ff !important;
   background: #d5e6fb !important;
+}
+
+table thead {
+  border: none !important;
 }

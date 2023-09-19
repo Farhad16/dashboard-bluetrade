@@ -8,6 +8,8 @@ import line1 from "../../assets/icons/line1.png";
 import line2 from "../../assets/icons/line2.png";
 import line3 from "../../assets/icons/line3.png";
 import Statbox from "../Statbox";
+import Markets from "./market/Markets";
+import PlotChart from "../PlotChart";
 
 const statData = [
   {
@@ -63,6 +65,10 @@ function Dashboard() {
           {statData.map((s) => (
             <Statbox key={s.name} {...s} alt="img" />
           ))}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+          <PlotChart />
+          <Markets />
         </div>
       </div>
     </Layout>

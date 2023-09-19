@@ -15,11 +15,7 @@ function Statbox({
   bg,
 }) {
   return (
-    <div
-      className={`flex flex-col bg-white dark:bg-[#1C1C25] rounded-lg w-full gap-2 ${
-        estimateBalance ? "p-4" : "p-4 !pr-6"
-      }`}
-    >
+    <div className="flex flex-col bg-white dark:bg-[#1C1C25] rounded-lg w-full gap-2 p-5">
       <div className="flex flex-row justify-between gap-4 items-center flex-grow">
         <div className="flex flex-row gap-3 items-center">
           <div

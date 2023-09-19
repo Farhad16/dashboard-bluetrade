@@ -35,7 +35,10 @@ function Sidebar({ theme }) {
     <Box
       sx={{
         "& .pro-sidebar": {
-          borderRight: "1px solid #C4CACD !important",
+          borderRight:
+            theme === "dark"
+              ? "1px solid #272727"
+              : "1px solid rgba(196, 202, 205, 0.3)",
         },
         "& .pro-sidebar-inner": {
           background: `${

@@ -5,6 +5,7 @@ import ListItem from "@mui/material/ListItem";
 import Popover from "@mui/material/Popover";
 import Switch from "@mui/material/Switch";
 import React, { useState } from "react";
+import useThemeMode from "./hooks/useThemeMode";
 
 const MoreOptionPopover = ({ children, toggleDarkMode, user }) => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -12,11 +13,14 @@ const MoreOptionPopover = ({ children, toggleDarkMode, user }) => {
     setAnchorEl(event.currentTarget);
   };
 
+  const { theme } = useThemeMode();
+  const mode = theme === "dark" ? true : false;
+
   const handleClosePopover = () => {
     setAnchorEl(null);
   };
 
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(mode);
 
   const handleChange = () => {
     setChecked(!checked);
