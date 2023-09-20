@@ -4,14 +4,13 @@ import { useTable, useSortBy } from "react-table";
 const DataTable = ({ data, columns }) => {
   console.log(columns, columns);
 
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable(
-      {
-        columns,
-        data,
-      },
-      useSortBy
-    );
+  const { getTableProps, getTableBodyProps, rows, prepareRow } = useTable(
+    {
+      columns,
+      data,
+    },
+    useSortBy
+  );
   return (
     <div className="w-full overflow-x-auto">
       <table {...getTableProps()} className="w-full font-normal">

@@ -1,6 +1,5 @@
 import React from "react";
 import { ReactComponent as EyeIcon } from "../assets/svgs/eye.svg";
-import Chip from "@mui/material/Chip";
 
 function Statbox({
   icon,
