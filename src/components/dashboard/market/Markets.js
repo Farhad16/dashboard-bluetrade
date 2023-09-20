@@ -14,7 +14,9 @@ function Markets() {
         {catagories.map((name) => (
           <span
             key={name}
-            className="text-xs bg-[#F8F8F9] dark:bg-[#131313] px-2.5 py-1 rounded-lg"
+            className={`text-xs bg-[#F8F8F9] dark:bg-[#131313] px-2.5 py-1 rounded-lg ${
+              name === "All" && "text-[#1A71FF]"
+            }`}
           >
             {name}
           </span>
