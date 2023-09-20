@@ -22,7 +22,7 @@ function Markets() {
       </div>
       <DataTable data={allData} columns={columns} />
       <div className="flex justify-end items-center dark:text-white opacity-40">
-        <span className="text-[10px] dark:bg-[#0D0D0D] px-2.5 py-1 rounded-lg border border-[#5E6E78] border-opacity-10">
+        <span className="text-[10px] dark:bg-[#0D0D0D] px-2.5 py-1 rounded-md border border-[#5E6E78] border-opacity-50">
           View All
         </span>
       </div>
