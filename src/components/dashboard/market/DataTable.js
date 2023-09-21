@@ -2,8 +2,6 @@ import React from "react";
 import { useTable, useSortBy } from "react-table";
 
 const DataTable = ({ data, columns }) => {
-  console.log(columns, columns);
-
   const { getTableProps, getTableBodyProps, rows, prepareRow } = useTable(
     {
       columns,

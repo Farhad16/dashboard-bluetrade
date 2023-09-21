@@ -52,3 +52,23 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0; /* Optional: Remove any margin */
 }
+
+text {
+  color: #626d7d;
+  fill: #626d7d !important;
+}
+
+text-anchor end {
+  color: #626d7d;
+  fill: #0962e8 !important;
+}
+
+.dark-svg svg path {
+  fill: #fff !important;
+  filter: grayscale(100%);
+}
+
+.dark-svg svg {
+  fill: #fff !important;
+  filter: grayscale(100%);
+}
