@@ -4,13 +4,13 @@ import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import MenuIcon from "@mui/icons-material/Menu";
 import "react-pro-sidebar/dist/css/styles.css";
 import logo from "../../assets/icons/Logo.png";
-import { ReactComponent as Dashboard } from "../../assets/svgs/Dashboard.svg";
-import { ReactComponent as Marketing } from "../../assets/svgs/Marketing.svg";
-import { ReactComponent as Transactions } from "../../assets/svgs/Transaction.svg";
-import { ReactComponent as Profile } from "../../assets/svgs/Profile.svg";
-import { ReactComponent as Setting } from "../../assets/svgs/Setting.svg";
-import { ReactComponent as Help } from "../../assets/svgs/Help.svg";
-import { ReactComponent as Logout } from "../../assets/svgs/Logout.svg";
+import { ReactComponent as Dashboard } from "../assets/svgs/Dashboard.svg";
+import { ReactComponent as Marketing } from "../assets/svgs/Marketing.svg";
+import { ReactComponent as Transactions } from "../assets/svgs/Transaction.svg";
+import { ReactComponent as Profile } from "../assets/svgs/Profile.svg";
+import { ReactComponent as Setting } from "../assets/svgs/Setting.svg";
+import { ReactComponent as Help } from "../assets/svgs/Help.svg";
+import { ReactComponent as Logout } from "../assets/svgs/Logout.svg";
 
 const Item = ({ title, isCollapsed, icon, selected, setSelected, theme }) => {
   return (
