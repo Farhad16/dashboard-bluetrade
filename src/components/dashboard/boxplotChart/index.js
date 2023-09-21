@@ -5,7 +5,7 @@ import { data } from "./data";
 function BoxPlotChart() {
   const colors = ["#4D91FF", "#032658"];
   const timeLimit = ["1H", "3H", "5H", "1D", "1W", "1M"];
-  const [active, setActive] = useState(0);
+  const [active, _] = useState(0);
 
   return (
     <div className="flex flex-col bg-white dark:bg-[#1C1C25] rounded-lg w-full lg:col-span-2 sm:col-span-1 p-6 overflow-hidden">
